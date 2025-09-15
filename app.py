@@ -88,6 +88,11 @@ def api_data():
     }
     return jsonify(data)
 
+@app.route('/api/myname')
+def my_name():
+    return jsonify({"name": "Zhi Lin Tan"})
+
+
 @app.errorhandler(404)
 def not_found(error):
     """404 error handler"""
